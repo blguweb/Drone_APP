@@ -147,7 +147,7 @@ public class BTClient extends Activity {
             } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
 
                 // Show all the supported services and characteristics on the user interface.
-                // 获得所有的GATT服务，对于Crazepony的BLE透传模块，包括GAP（General Access Profile），
+                // 获得所有的GATT服务，对于UAVRemoter的BLE透传模块，包括GAP（General Access Profile），
                 // GATT（General Attribute Profile），还有Unknown（用于数据读取）
                 //可以用于日志loading
                 /**
@@ -580,7 +580,7 @@ public class BTClient extends Activity {
                 mDeviceName = data.getExtras().getString(EXTRAS_DEVICE_NAME);
                 mDeviceAddress = data.getExtras().getString(EXTRAS_DEVICE_ADDRESS);
                 Log.i(TAG, "mDeviceName:"+mDeviceName+",mDeviceAddress:"+mDeviceAddress);
-                //连接该BLE Crazepony模块
+                //连接该BLE UAVRemoter模块
                 if (mBluetoothLeService != null) {
                     final boolean result = mBluetoothLeService.connect(mDeviceAddress);
                     Log.d(TAG, "Connect request result=" + result);

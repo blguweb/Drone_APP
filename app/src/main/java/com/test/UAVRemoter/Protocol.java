@@ -6,7 +6,7 @@
 	联系邮箱：2436559745@qq.com
 */
 //发送部分写有些麻烦，直接定义一个发送缓冲Byte变长数组，写writeInt8 writeInt16 ，把数据到里头，再统一发，发完清空清长。
-//Crazepony APP和飞控之间通信协议使用了MWC飞控协议（MSP，Multiwii Serial Protocol），
+//UAVRemoter APP和飞控之间通信协议使用了MWC飞控协议（MSP，Multiwii Serial Protocol），
 //MSP协议格式详见http://www.multiwii.com/wiki/index.php?title=Multiwii_Serial_Protocol
 
 package com.test.UAVRemoter;

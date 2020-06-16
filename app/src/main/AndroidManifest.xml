@@ -13,9 +13,6 @@
         tools:ignore="ProtectedPermissions"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-feature
-        android:name="android.hardware.bluetooth_le"
-        android:required="true" />
 
     <application
         android:icon="@mipmap/ic_launcher"
